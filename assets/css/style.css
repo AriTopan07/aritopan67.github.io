@@ -422,7 +422,7 @@ h6 {
   font-size: 56px;
   font-weight: 700;
   line-height: 64px;
-  color: #fff;
+  color: rgb(228, 223, 223);
   font-family: "Poppins", sans-serif;
 }
 
@@ -434,6 +434,33 @@ h6 {
   color: rgba(255, 255, 255, 0.9);
   margin: 10px 0 0 0;
   font-size: 24px;
+}
+
+
+#hero .visit-me{
+  margin-top: 30px;
+}
+
+#hero .visit-me a{
+  font-family: "Poppins", sans-serif;
+}
+
+#hero .bi{
+  color: #ffc451;
+}
+
+#hero .btn-visit {
+  padding: 8px 40px;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+#hero .btn-visit:hover{
+  color: #ffc451;
+  border: 1px solid #ffc451;
 }
 
 #hero .icon-box {
