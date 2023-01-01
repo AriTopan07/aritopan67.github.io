@@ -46,7 +46,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #ff7f00;
+  background: #ffc451;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -214,7 +214,7 @@ h6 {
 .navbar li:hover>a {
   color: #ffc451;
 }
-
+/* 
 .navbar .dropdown ul {
   display: block;
   position: absolute;
@@ -279,7 +279,7 @@ h6 {
   .navbar .dropdown .dropdown:hover>ul {
     left: -100%;
   }
-}
+} */
 
 /**
 * Mobile Navigation 
@@ -337,6 +337,7 @@ h6 {
 
 .navbar-mobile a,
 .navbar-mobile a:focus {
+  align-items: center;
   padding: 10px 20px;
   font-size: 15px;
   color: #ffffff;
@@ -354,7 +355,7 @@ h6 {
 .navbar-mobile .getstarted:focus {
   margin: 15px;
 }
-
+/* 
 .navbar-mobile .dropdown ul {
   position: static;
   display: none;
@@ -388,7 +389,7 @@ h6 {
 
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
-}
+} */
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -598,41 +599,6 @@ section {
 
 .about .content p:last-child {
   margin-bottom: 0;
-}
-
-/*--------------------------------------------------------------
-# Clients
---------------------------------------------------------------*/
-.clients {
-  padding-top: 20px;
-}
-
-.clients .swiper-slide img {
-  opacity: 0.5;
-  transition: 0.3s;
-  filter: grayscale(100);
-}
-
-.clients .swiper-slide img:hover {
-  filter: none;
-  opacity: 1;
-}
-
-.clients .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.clients .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  background-color: #ddd;
-}
-
-.clients .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #ffc451;
 }
 
 /*--------------------------------------------------------------
@@ -1014,6 +980,68 @@ section {
 .portfolio-details .portfolio-description p {
   padding: 0;
 }
+
+/* breadcrumbs */
+
+#main .breadcrumbs h2{
+  color: #ffc451;
+  font-weight: 700;
+}
+
+#main .icon-box {
+  padding: 20px 10px;
+  height: 50%;
+  text-align: center;
+}
+
+#main .icon-box i {
+  font-size: 22px;
+  line-height: 1;
+  color: #ffc451;
+}
+
+#main .icon-box a {
+  color: #ffc451;
+  font-weight: 700;
+  margin: 10px 0 0 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 20px;
+  
+}
+
+
+#main .icon-box i:hover {
+  color: #ff7f00;
+}
+
+#main .icon-box a:hover {
+  color: #ff7f00;
+}
+
+
+@media (min-width: 1024px) {
+  #main {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #main {
+    height: auto;
+  }
+
+  #main h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #main h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Testimonials
