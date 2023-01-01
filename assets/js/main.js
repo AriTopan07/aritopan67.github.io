@@ -165,39 +165,10 @@
   }
 
   /**
-   * Clients Slider
+   * Initiate glightbox
    */
-  new Swiper('.clients-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 2,
-        spaceBetween: 40
-      },
-      480: {
-        slidesPerView: 3,
-        spaceBetween: 60
-      },
-      640: {
-        slidesPerView: 4,
-        spaceBetween: 80
-      },
-      992: {
-        slidesPerView: 6,
-        spaceBetween: 120
-      }
-    }
+  const glightbox = GLightbox({
+    selector: '.glightbox'
   });
 
   /**
@@ -290,3 +261,28 @@
   new PureCounter();
 
 })()
+
+// contact
+
+const contactForm = document.getElementById("contact-form");
+const loader = document.querySelector(".loader");
+
+loader.style.display = "none";
+
+contactForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+  loader.style.display = "block";
+  const url = e.target.action;
+  const formData = new FormData(contactForm);
+
+  fetch(url, {
+    method: "POST",
+    body: formData,
+    mode: "no-cors",
+  })
+    .then(() => {
+      loader.style.display = "none";
+      window.location.href = "thankyou.html";
+    })
+    .catch((e) => alert("Error occured"));
+});
