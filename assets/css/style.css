@@ -145,13 +145,13 @@ h6 {
 }
 
 #header .logo {
-  font-size: 22px;
+  font-size: 32px;
   margin: 0;
   padding: 0;
   line-height: 1;
   font-weight: 600;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 #header .logo a {
@@ -397,7 +397,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero.jpg") top center;
+  background: url("../img/bg/Gambar\ JPEG.jpeg") top center;
   background-size: cover;
   position: relative;
 }
@@ -634,7 +634,7 @@ section {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 400px;
+  min-height: 600px;
   border-radius: 4px;
 }
 
@@ -982,25 +982,7 @@ section {
 }
 
 /* breadcrumbs */
-#breadcrumbs .head i{
-  color: #ffc451;
-  font-size: 22px;
-  font-weight: 600;
-}
 
-#breadcrumbs .head a{
-  font-style: normal;
-  color: #ffc451;
-  font-size: 22px;
-  font-weight: 600;
-}
-
-#breadcrumbs .head h2{
-  padding-top: 5px;
-  font-style: normal;
-  font-weight: 700;
-  color: #000000;
-}
 
 /*--------------------------------------------------------------
 # Testimonials

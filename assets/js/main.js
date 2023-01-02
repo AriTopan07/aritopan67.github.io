@@ -282,7 +282,7 @@ contactForm.addEventListener("submit", function (e) {
   })
     .then(() => {
       loader.style.display = "none";
-      window.location.href = "none";
+      window.location.href = "loader";
     })
     .catch((e) => alert("Error occured"));
-});
+});S
